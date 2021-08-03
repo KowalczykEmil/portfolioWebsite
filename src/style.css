@@ -6,6 +6,10 @@
     text-decoration: none;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
@@ -77,7 +81,30 @@
     display: none;
 }
 
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: crimson;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
 
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    cursor: pointer;
+    pointer-events: auto;
+}
 
 /*home section styling */
 .home{
@@ -135,7 +162,7 @@ section{
     padding: 100px 0;
 }
 
-.about, .services, .skills, .projects, .contact{
+.about, .services, .skills, .projects, .contact, .footer{
     font-family: 'Poppins', sans-serif;
 }
 
@@ -602,9 +629,22 @@ owl-dot:hover{
 }
 
 
+/* Footer section styling */ 
+footer{
+    background: #111;
+    padding: 20px 23px;
+    color: #fff;
+    text-align: center;
+}
 
+footer span a{
+    color: crimson;
+    text-decoration: none;
+}
 
-
+footer span a:hover{
+    text-decoration: underline;
+}
 
 
 
