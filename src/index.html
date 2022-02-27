@@ -58,8 +58,8 @@
                 <div class="text">I'm Emil and I'm an <span class="typing-2"></span></div>
                 <p>I'm a third-year of IT student at the Technical University of Lodz.</p>
                 <p>I am interested in programming and databases. I took my first commercial steps in a hosting company, so I learned how to work with clients and gained practical knowledge of network and system administration.</p>
-                <a href="#">Download CV</a>
-                <span><a href="https://github.com/KowalczykEmil">Come to GitHub</a></span>
+                <a target="_blank" href="/Emil_Kowalczyk.pdf">Download CV</a>
+                <span><a target="_blank" href="https://github.com/KowalczykEmil">Come to GitHub</a></span>
             </div>
         </div>
     </div>
@@ -227,20 +227,20 @@
             </div>
             <div class="column right">
                 <div class="text">Message me</div>
-                <form action="#">
+                <form action="https://formsubmit.co/contact@kowalczykemil.pl" method="POST">
                     <div class="fields">
                         <div class="field name">
-                            <input type="text" placeholder="Name" required>
+                            <input name="name" type="text" placeholder="Name" required>
                         </div>
                         <div class="field email">
-                            <input type="text" placeholder="Email" required>
+                            <input name="email" type="email" placeholder="Email" required>
                         </div>
                     </div>   
                             <div class="field">
                                 <input type="text" placeholder="Subject" required>
                             </div>
                             <div class="field textarea">
-                                <textarea cols="30" rows="10" placeholder="Describe project.." required></textarea>
+                                <textarea name="message" cols="30" rows="10" placeholder="Describe project.." required></textarea>
                             </div>
                             <div class="button">
                                 <button type="submit">Send message</button>
